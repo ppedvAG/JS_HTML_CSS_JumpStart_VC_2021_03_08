@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="Pfad.zu.meinem.css"> -->
+    <!--    <script src="../JS/main.js" defer></script>
+            <script src="../JS/myOtherJSFile1.js"></script>
+            <script src="../JS/myOtherJSFile2.js"></script> 
+    -->
+    <title>JS Basics</title>
+
+    <style>
+
+        .hover-demo{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+
+        .hover-demo:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="demo-div">Hallo!</div>
+    <div class="hover-demo"></div>
+
+    <button>OK</button>
+
+
+    <script>
+
+        /* 
+          Der JS Code gehört in ein externes JS-File!
+          In diesem Fall steht es nur für die Beispiele im selben File,
+          damit es beim Nachschlagen leichter gefunden wird!!
+        */
+
+        /* alt + shift + a - erstellt Kommentar */
+
+        // einzeilige Kommentare
+        /* 
+            mehrzeilige
+            Kommentare
+        */
+
+        /* 
+            Kommentar
+            // verschachtelte Kommentare
+            Kommentar
+        */
+
+
+        /* Variablen */
+        /* Variablendeklaration */
+
+        var x;
+
+        /* mehrere Variablen auf einmal deklarieren: */
+
+        var y, text, firstName;
+
+        /* Initialisierung */
+
+        x = 5;
+
+        /* Deklaration und Initialisierung zusammenfassen: */
+
+        var a = 3;
+
+        var b, c, d = 4;
+
+
+
+        /* Konstanten */
+        /* dieser Wert verändert sich NICHT */
+
+        const MwSt = 0.19;
+
+        
+
+        console.log('Hallo!');
+        console.log('Der Wert von x ist: ' + x + '.');
+        console.log('a + d = ' + (a+d));
+
+
+        console.log("Das ist ein 'String'.");
+        console.log('Das ist ein "String".');
+
+
+        x = x + 7;
+
+        // oder kürzere Schreibweise:
+
+        x += 7;
+
+
+
+        console.log('Der Wert von x ist: ' + x + '.');
+
+        /* Operatoren */
+        /* 
+        
+            +, -, *, /
+
+            ++, --               increment, decrement
+
+            +=, -=, *=, /=
+
+            % ... Modulus-Operator    Bsp.: 10%2=0
+
+
+
+            // Vergleichsoperatoren
+
+            ==, <=, >=, !=
+            ===, !==    - fragt auch den Datentyp ab
+
+
+            // logische Operatoren
+
+                &&   ............... logisches UND (AND)
+                ||   ............... logisches ODER (OR)
+                !    ............... NICHT (NOT)
+        
+        
+
+
+            // Datentypen
+
+                number (Zahl)
+
+                    5
+                    5.5
+                    -5
+                    5.12345678909876543212345678
+                    123e5 (Exponentialschreibweise) 12300000
+                    123e-5   0.00123
+
+
+                String (Text)
+
+                    'Text'
+                    "Text"
+                    'das ist ein "String"'
+                    "das ist ein 'String'"
+
+
+                boolean
+                    true/false
+
+                object
+
+
+                undefined (noch nicht definiert)
+        
+        */
+
+
+        text = 'Hallo';
+
+        console.log(typeof x);
+        console.log(typeof b);
+        console.log(typeof text);
+
+        console.log(isNaN(x));
+
+
+        c = '4';
+
+        console.log(c+d); // 44 -- Achtung! String, keine Rechnung.
+
+        // überprüft nur den Wert, der drinsteht!
+        console.log(c == d); // true !!!
+
+
+        // überprüft auch den Datentyp!
+        console.log(c === d); // false
+
+
+
+        firstName = 'James';
+
+        var lastName = 'Bond';
+
+
+        var fullName = firstName + ' ' + lastName;
+
+
+        console.log(fullName);
+
+        
+        console.log('Der vollständige Name lautet: ' + fullName + '.');
+
+
+
+
+        var demoDiv = document.getElementById('demo-div');
+
+
+        console.log(typeof demoDiv);
+
+
+        console.log(demoDiv.innerHTML);
+
+
+        /* demoDiv.innerHTML = demoDiv.innerHTML + ' Neuer Text.'; */
+        // oder kürzer:
+        // demoDiv.innerHTML += ' Neuer Text.';
+
+
+        demoDiv.innerHTML = '<p>' + 'Neuer Text.' + '</p>';
+
+        var btn = document.createElement('BUTTON');
+        btn.innerHTML = 'Reset';
+        document.body.appendChild(btn);
+
+
+        demoDiv.style.color = 'red';
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+
+/* Typ-Selektor (type-selector) */
+p{
+    font-family: Raleway, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+/* Klassen-Selektor */
+.demo-class{
+    color: red;
+}
+
+
+/* ID-Selektor */
+#demo-id-1{
+    font-style: italic;
+    /* font-weight: bold; */
+}
+
+/* ******************************************************************* */
+
+.demo-text-deco{
+    /* text-decoration: underline; */
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.demo-div{
+    background-color: greenyellow;
+    height: 100px;
+    width: 200px;
+}
+
+.demo-div-2{
+    background-color: indigo;
+    height: 100px;
+    width: 200px;
+}
+
+
+

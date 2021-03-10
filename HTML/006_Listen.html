@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen</title>
+    <style>
+        ul {
+            /* list-style-type: none; */
+        }
+        
+        .demo{
+            list-style-type: none;
+        }
+        .demo>li::before{
+            content: '✗';
+            display: inline-block;
+            /* margin-right: 0.5em; */
+        }
+        
+        .demo-2{
+            list-style-image: url(../images/apple.png);
+        }
+
+        /* Achtung: Browsersupport?? */
+        .demo-3>li::marker{
+            content: '☀ ';
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ungeordnete Liste (unordered list)</h1>
+
+    <ul>
+        <li>Äpfel</li><!-- list item (Listeneintrag) -->
+        <li>Bananen</li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ul>
+
+
+    <h2>Liste verschachteln</h2>
+    <ul>
+        <li>Äpfel</li><!-- list item (Listeneintrag) -->
+        <li>
+            Bananen
+            <ul>
+                <li>Test</li>
+                <li>noch ein Test</li>
+                <li>noch einer</li>
+            </ul>
+        </li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ul>
+
+    <ul class="demo">
+        <li>Äpfel</li><!-- list item (Listeneintrag) -->
+        <li>Bananen</li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ul>
+    
+    <ul class="demo-2">
+        <li>Äpfel</li><!-- list item (Listeneintrag) -->
+        <li>Bananen</li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ul>
+
+    
+    <ul class="demo-3">
+        <li>Äpfel</li><!-- list item (Listeneintrag) -->
+        <li>Bananen</li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ul>
+
+
+
+
+
+    <h1>Geordnete Listen (ordered list)</h1>
+
+    <ol>
+        <li>Äpfel</li><!-- list item (Listeneintrag) -->
+        <li>Bananen</li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ol>
+
+    
+    <ol type="a">
+        <li>Äpfel</li>
+        <li>Bananen</li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ol>
+
+    
+    <ol>
+        <li value="300">Äpfel</li>
+        <li>Bananen</li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ol>
+
+    
+    <ol reversed>
+        <li>Äpfel</li>
+        <li>Bananen</li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ol>
+
+
+    <!-- Achtung: macht keinen Sinn! -->
+    <ol reversed>
+        <li value="2">Äpfel</li>
+        <li>Bananen</li>
+        <li>Kiwis</li>
+        <li>Birnen</li>
+    </ol>
+
+    <h1>Description List</h1>
+
+    <dl>
+        <dt>Kaffee</dt><!-- definition term -->
+        <dd>Koffeinhaltiges Getränk</dd><!-- definition description -->
+
+        <dt>Tee</dt>
+        <dd>Aufgussgetränk</dd>
+
+        <dt>Limonade</dt>
+        <dd>Fruchtsaftgetränk</dd>
+    </dl>
+
+</body>
+
+</html>

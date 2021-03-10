@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block- und inline-Elemente</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        .lbl-inp-container{
+            /* border: 1px solid red; */
+            padding-bottom: 0.5em;
+        }
+        .lbl-inline{
+            background-color: cadetblue;
+            width: 100px;/* funktioniert NICHT weil Inline-Element! */
+            /* display: inline; */
+        }
+
+        .lbl-block{
+            background-color: cadetblue;
+            width: 100px;
+            display: block;
+        }
+
+        .lbl-inline-block{
+            /* background-color: cadetblue; */
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Überschrift h1</h1>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic aspernatur earum repellendus eaque aliquam magnam
+        officiis dignissimos quam natus voluptas! Mollitia voluptatem dicta itaque eveniet velit officia eaque? Illo
+        alias necessitatibus aliquid consequuntur beatae similique minima labore esse voluptatum. Perferendis eveniet
+        commodi id ipsum optio sequi qui error provident quia odit, repudiandae maiores iusto dignissimos eaque
+        recusandae eos? Fuga, deleniti perspiciatis architecto praesentium enim dolore facere quidem voluptates
+        temporibus hic assumenda reprehenderit obcaecati quo recusandae unde nesciunt autem nihil laborum blanditiis
+        animi excepturi. Voluptatum asperiores illo enim officiis, aut cum, voluptas numquam odio hic minima voluptates
+        ipsam eum quo aliquam.
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore placeat nisi voluptatem sed illum
+            assumenda similique consectetur ipsam distinctio rerum cumque nemo in, neque velit quaerat, eaque dolore
+            sapiente recusandae aut, doloremque hic. Quod deleniti nemo, cumque, labore dolor dolore aperiam rem
+            distinctio illum consequuntur commodi doloribus, soluta sint.
+        </p>
+        <p>
+            <a href="#">Lorem</a> <span>ipsum dolor sit</span> amet consectetur adipisicing elit. Magnam ex dignissimos
+            pariatur nobis deleniti eos?
+            Non cum eum fugit sapiente in fuga atque excepturi accusamus omnis voluptates, accusantium illum velit
+            aspernatur corporis culpa dolor a nemo cumque itaque commodi assumenda. Veritatis qui ipsum fugit non
+            molestiae rem aut eum adipisci?
+        </p>
+    </div>
+
+    <h2>Label Inline-Demo</h2>
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-inline">Vorname:</label>
+        <input type="text">
+    </div>
+
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-inline">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-inline">Passwort:</label>
+        <input type="text">
+    </div>
+
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-inline">Straße:</label>
+        <input type="text">
+    </div>
+
+    
+    <h2>Label Block-Demo</h2>
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-block">Vorname:</label>
+        <input type="text">
+    </div>
+
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-block">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-block">Passwort:</label>
+        <input type="text">
+    </div>
+
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-block">Straße:</label>
+        <input type="text">
+    </div>
+
+    
+    <h2>Label Inline-Block-Demo</h2>
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-inline-block">Vorname:</label>
+        <input type="text">
+    </div>
+
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-inline-block">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-inline-block">Passwort:</label>
+        <input type="text">
+    </div>
+
+    <div class="lbl-inp-container">
+        <label for="" class="lbl-inline-block">Straße:</label>
+        <input type="text">
+    </div>
+
+
+</body>
+
+</html>

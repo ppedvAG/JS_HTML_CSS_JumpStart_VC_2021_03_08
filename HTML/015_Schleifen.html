@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schleifen</title>
+</head>
+
+<body>
+
+    <div id="demo" class="demo"></div>
+    <button id="btn-while">While</button>
+    <button id="btn-for">For</button>
+
+
+
+    <script>
+
+        var demoDiv = document.getElementById('demo');
+        var btnWhile = document.getElementById('btn-while');
+        var btnFor = document.getElementById('btn-for');
+        var text = '';
+
+
+        /* Schleifen (loop) */
+        /* While-Schleife */
+
+        function whileDemo() {
+            var i = 1;  // iterator (Zähler)
+
+            while (i < 11) {
+                text += '<p>' + 'Die Schleife wurde ' + i + ' Mal ausgeführt.' + '</p>';
+                i++;
+            }
+
+            demoDiv.innerHTML = text;
+        }
+
+
+        btnWhile.addEventListener('click', whileDemo);
+
+
+
+        /* For-Schleife */
+
+        function forDemo() {
+
+            for (var j = 10; j > 0; j--) {
+                text += '<p>' + 'Der Zähler steht auf ' + j + '.' + '</p>';
+            }
+
+            demoDiv.innerHTML = text;
+
+        }
+
+
+        btnFor.addEventListener('click', forDemo);
+
+
+        /* Im Normalfall werden wir von 0 - < als ein bestimmter Wert zählen. */
+
+    </script>
+</body>
+
+</html>

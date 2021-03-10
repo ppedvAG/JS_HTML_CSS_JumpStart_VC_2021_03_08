@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funktionen</title>
+    <!--  <link rel="stylesheet" href="Dateipfad zu CSS">
+    <script src="Dateipfad zum JS" defer></script> -->
+    <style>
+        .demo {
+            height: 50px;
+            font-size: 24px;
+            border: 2px solid black;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo01" class="demo" onmouseover="setBgCol()"></div>
+    <div id="demo02" class="demo"></div>
+    <div id="demo03" class="demo"></div>
+    <div id="demo04" class="demo"></div>
+    <div id="demo05" class="demo"></div>
+
+
+    <script>
+
+        /* 
+
+
+            // mit on davor, wenn wir einen Event-Listener als HTML-Attribut tarnen
+            // also z.B.:<div id="demo01" class="demo" onmouseover="setBgCol()"></div>
+            // ohne on davor, wenn wir das Event nur in JS abfragen
+
+
+            (on)click
+            (on)mouseover
+            (on)mouseout
+            (on)change
+            (on)input
+            (on)keydown
+            (on)keypress
+            (on)keyup
+            (on)focus
+            (on)blur
+            (on)scroll
+        
+        */
+
+
+        var demoDiv01 = document.getElementById('demo01');
+        var demoDiv02 = document.getElementById('demo02');
+        var demoDiv03 = document.getElementById('demo03');
+        var demoDiv04 = document.getElementById('demo04');
+
+
+
+
+        /* Diese Funktion verändert die Hintergrundfarbe von demoDiv01. */
+        function setBgCol() {
+            // toller Code
+            demoDiv01.style.backgroundColor = 'chartreuse';
+        }
+
+        // function call (Funktionsaufruf)
+        // setBgCol();
+        // Funktion wird erst ausgeführt, wenn wir einen function call machen
+
+
+        // wir warten darauf, ob ein bestimmtes Event eintritt:
+        // mit einem EventListener:
+
+        demoDiv02.addEventListener('click', setBgCol);
+
+
+        // EventListener mit anonymer Funktion:
+        /* 
+            demoDiv03.addEventListener('click', function(){
+
+                // toller Code
+                demoDiv03.style.height = 'initial';
+                demoDiv03.innerHTML = '<p>' + 'Test funktioniert!' + '</p>';
+
+            }); 
+        */
+
+
+        // wenn wir etwas mit dem gleichen Element machen möchten: this.
+        demoDiv03.addEventListener('click', function () {
+
+            // toller Code
+            this.style.height = 'initial';
+            this.innerHTML = '<p>' + 'Test funktioniert!' + '</p>';
+
+        });
+
+
+
+        // Übung: Hovereffekt
+        
+        var demoDiv05 = document.getElementById('demo05');
+
+        function setBgGreen(){
+            demoDiv05.style.backgroundColor = 'green';
+        }
+
+        function setBgBlue(){
+            demoDiv05.style.backgroundColor = 'rgb(0, 0, 255)';
+        }
+
+        function resetBgCol(){
+            demoDiv05.style.backgroundColor = 'initial';
+        }
+
+        demoDiv05.addEventListener('mouseover', setBgGreen);
+        demoDiv05.addEventListener('mouseout', resetBgCol);
+
+
+
+        // Parameter übergeben
+
+        function demoCalc(a, b){
+            // toller Code
+            return a * b;
+        }
+
+
+        console.log(demoCalc(5, 3));
+
+
+
+        function setBgRed(obj){
+            obj.style.backgroundColor = 'red';
+        }
+
+
+        demoDiv04.addEventListener('click', function(){
+            setBgRed(demoDiv05);
+        });
+
+
+    </script>
+</body>
+
+</html>

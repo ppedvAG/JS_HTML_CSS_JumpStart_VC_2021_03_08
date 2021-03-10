@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Größenangaben</title>
+    <style>
+        /* NICHT nachmachen... Styles gehören ins Stylesheet!  */
+        /* dieses Style-Tag soll nur dazu dienen, dass ihr nicht Info aus
+            mehreren Files zusammensuchen müsst! */
+
+        :root{
+            font-size: 20px;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        div{
+            height: 150px;
+        }
+
+        .demo-px{
+            width: 200px;
+            background-color: cadetblue;
+        }
+
+        .demo-em{
+            font-size: 24px;
+            background-color: rgb(9, 97, 100);
+            color: white;
+            width: 10em;
+        }
+
+        
+        .demo-rem{
+            background-color: rgb(5, 205, 212);
+            color: white;
+            width: 10rem;
+        }
+
+        .demo-percent{
+            background-color: rgb(68, 121, 122);
+            color: white;
+            width: 100%; /* 100% = so verhält sich ein Block-Element standardmäßig */
+            /* height: 100%; */ /* height in % funktioniert nur, wenn das übergeordnete
+                                    Element eine fixe Höhe hat, an der sie sich orientieren kann */
+        }
+
+        .demo-vw{
+            background-color: rgb(75, 239, 241);
+            color: black;
+            width: 100vw; /* viewport-width */
+            font-size: 8vw;
+            height: initial;
+        }
+
+        .demo-vh{
+            background-color: rgb(166, 195, 196);
+            color: black;
+            width: 100vh; /* viewport-height */ /* Breitenangabe in vh bringt nix! */
+            height: 100vh;
+        }
+
+
+        .container{
+            border: 2px solid rgb(1, 75, 75);
+            height: 400px;
+            width: 600px;
+        }
+
+        .inner-div{
+            height: 50%; /* % für Höhe funktioniert nur, wenn Container fixe Höhe hat! */
+            width: 50%;
+            background-color: rgb(214, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="demo-px">Das ist ein Div - px</div>
+    <div class="demo-em">Das ist ein Div - em</div>
+    <div class="demo-rem">Das ist ein Div - rem</div>
+    <div class="demo-percent">Das ist ein Div - percent</div>
+    <div class="demo-vw">Das ist ein Div - vw</div>
+    <div class="demo-vh">Das ist ein Div - vh</div>
+
+
+    <div class="container">
+        <div class="inner-div"></div>
+    </div>
+
+</body>
+</html>

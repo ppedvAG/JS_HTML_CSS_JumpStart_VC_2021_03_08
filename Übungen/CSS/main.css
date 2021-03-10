@@ -1,0 +1,139 @@
+:root{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+}
+
+.page-container{
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+.comp-name-container{
+    height: 200px;
+    background-color: lightslategrey;
+}
+
+.main-nav-container{
+    height: 100px;
+    background-color: rgb(29, 54, 78);
+}
+
+.main-content-container{
+    background-color: rgb(232, 234, 236);
+    padding: 3rem;
+}
+
+.content-container, .float-container{
+    background-color: lightslategrey;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.table-container{
+}
+
+table {
+    border-collapse: collapse;
+    font-family: Calibri, Arial, sans-serif;
+    margin: 0 auto;
+}
+
+td,
+th {
+    border: 1px solid white;
+    padding: 0.5em 2em;
+}
+
+td {
+    background-color: rgb(204, 210, 247);
+    /* text-align: center; */
+}
+
+th {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(84, 103, 214);
+    color: white;
+}
+
+.img-container{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.img-container>img{
+    width: 100%;
+    display: block;
+}
+
+.float-container::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.text-container{
+    float: left;
+    width: 30%;
+    text-align: justify;
+}
+/* 
+schöner, als mit eigener Klasse:
+.text-container:nth-of-type(2){
+    margin: 0 5%;
+}
+ */
+.middle{
+    margin: 0 5%;
+}
+
+.float-img-4{
+    width: 25%;
+    float: left;
+    padding: 0 0.5em;
+    box-sizing: border-box;
+}
+
+.float-img-4>img{
+    width: 100%;
+    display: block;
+}
+
+.slider-container{
+    margin: 1em auto 0;
+    padding-bottom: 1em;
+    width: 25%;
+}
+
+.slider-container::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.lbl-container{
+    text-align: center;
+}
+
+.output{
+    float: left;
+    width: 2em;
+    padding: .2em .5em;
+    text-align: center;
+}
+
+.slider{
+    float: left;
+    margin: .6em .5em 0;
+}
+
+#nowDiv{
+    float:none;
+    margin: 0 auto;
+}
+
+.page-footer{  
+    height: 150px;
+    background-color: rgb(29, 54, 78);
+}

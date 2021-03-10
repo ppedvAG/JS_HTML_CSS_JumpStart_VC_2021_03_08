@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .float-container {
+            background-color: cadetblue;
+            /* border: 10px solid red; */
+        }
+
+        /* immer für float-container verwenden: */
+        .float-container::after {
+            display: block;
+            content: '';
+            /* Leerstring */
+            clear: both;
+        }
+
+
+        .float-item {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(36, 225, 231);
+            border: 2px solid rgb(1, 69, 71);
+            float: left;
+            /* margin: 1em; */
+        }
+
+
+
+        /* 
+            .clear-both{
+                clear: both;
+            } 
+        */
+
+
+        .inline-container {
+            background-color: coral;
+        }
+
+        .inline-item {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(243, 190, 171);
+            border: 2px solid rgb(94, 31, 8);
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="float-container">
+        <div class="float-item">01</div>
+         <div class="float-item">02</div>
+        <div class="float-item">03</div>
+        <div class="float-item">04</div>
+        <div class="float-item">05</div>
+        <div class="float-item">06</div>
+        <div class="float-item">07</div>
+        <div class="float-item">08</div>
+        <div class="float-item">09</div>
+       <!--  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse sunt harum dolorum illo, inventore soluta
+        adipisci itaque labore vero. Minima porro necessitatibus excepturi adipisci tempora recusandae blanditiis totam?
+        Minima, quae, reiciendis quia ullam itaque officia rem eaque similique porro, praesentium vero! Quae sunt sit
+        reprehenderit eos asperiores odit, fugit itaque dolor nemo iste amet cupiditate, iure ex perspiciatis, odio
+        provident? Omnis alias maxime optio doloribus vitae, similique, iste quasi iure pariatur delectus dignissimos
+        beatae excepturi quidem ab fugiat et aspernatur ex nostrum impedit corporis culpa natus ducimus dolorem aliquam?
+        Ex fugit est, voluptas eligendi ab ut! Quam aliquid, repellendus ex, nesciunt ad fugit voluptatum veritatis,
+        autem qui rem odit. Et rerum quia quasi veniam fuga similique cum nam voluptates sunt, dicta quod perferendis
+        sint sit recusandae debitis quos repellendus facilis neque veritatis dolore! Doloremque aspernatur numquam
+        dolore hic rerum cumque esse, unde dolores illo eius, commodi nihil. Illum repellendus natus ipsam unde omnis
+        dicta et sit, quibusdam saepe ex consequuntur, temporibus totam perspiciatis sequi. Consequuntur veniam repellat
+        odit iste quod molestiae adipisci libero eum recusandae fuga est sunt architecto, nostrum ducimus aliquam natus
+        maxime reprehenderit, rem, deleniti mollitia ex nisi! Accusamus consequatur tempore consectetur odio sequi
+        blanditiis ex quisquam natus!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo necessitatibus, sed similique quas dolore, maiores
+        reprehenderit laboriosam animi magni, doloribus omnis provident soluta corporis ad quasi tempore. Tenetur iure
+        cumque inventore, ducimus architecto quos, minus, eligendi optio odit odio harum facilis. Ab eligendi natus
+        animi corrupti hic perferendis, delectus iste fugit nam ipsa temporibus? Iusto consectetur esse, ex error
+        officiis laborum, facere ducimus a recusandae quisquam molestiae corrupti sit ab distinctio laudantium? Nihil
+        quidem sed quibusdam, recusandae nisi accusamus neque? Fuga velit est fugiat quod accusantium voluptas expedita
+        necessitatibus adipisci distinctio magni labore dolores, quasi animi illo, quisquam aspernatur doloremque
+        mollitia minima impedit temporibus saepe ipsum possimus. Quo maxime ipsa laudantium aliquam sit quasi alias sint
+        reprehenderit voluptatum. Suscipit libero quasi eveniet aut praesentium modi ad vel vitae odio, ex veniam cumque
+        facilis iusto soluta molestiae aperiam quaerat totam quisquam distinctio sed earum delectus. Voluptates vitae
+        porro earum? Laudantium eaque adipisci ab aliquid facilis totam impedit at voluptatibus voluptas est, delectus
+        ratione pariatur repellat iste quos minus fugit perspiciatis commodi, rem vel, porro iure sunt necessitatibus.
+        Ab, unde quis neque tempora distinctio sint pariatur dolore voluptas! Est suscipit veniam, dolorem totam
+        deleniti, ratione, blanditiis quod at quas quibusdam ab tempore. -->
+        <!-- <div class="clear-both"></div> -->
+    </div>
+
+    <div class="inline-container">
+        <!-- nicht verwenden! Nur zu Demozwecken: -->
+        <div class="inline-item">01</div>
+        <div class="inline-item">02</div>
+        <div class="inline-item">03</div>
+        <div class="inline-item">04</div>
+        <div class="inline-item">05</div>
+        <div class="inline-item">06</div>
+        <div class="inline-item">07</div>
+        <div class="inline-item">08</div>
+        <div class="inline-item">09</div>
+    </div>
+
+
+</body>
+
+</html>

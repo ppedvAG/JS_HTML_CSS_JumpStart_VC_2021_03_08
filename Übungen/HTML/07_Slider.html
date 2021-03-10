@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="../JS/slider.js" defer></script>
+    <title>Slider</title>
+</head>
+
+<body>
+
+    <div class="page-container">
+        <div class="comp-name-container">CompanyName</div>
+        <nav class="main-nav-container">Navigationsleiste</nav><!-- main-nav end -->
+        <main class="main-content-container">
+            <div class="content-container">
+                <div class="table-container">
+
+                    <div>
+                        <div class="lbl-inp-container">
+                            <div class="lbl-container">
+                                <label for="slider" class="lbl-demo">Range:</label>
+                            </div>
+                            <div class="slider-container">
+                                <div id="minDiv" class="output"></div>
+                                <input id="slider" class="slider" name="slider" type="range" min="0" max="100"
+                                    value="50" step="1">
+                                <div id="maxDiv" class="output"></div>
+                            </div>
+                            <div>
+                                <div id="nowDiv" class="output"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- content-container end -->
+            <div class="content-container">
+                <div class="img-container">
+                    <img src="../../images/cat.jpg" alt="cat">
+                </div>
+            </div><!-- content-container end -->
+        </main>
+        <footer class="page-footer">Seiten-Footer</footer>
+    </div>
+
+</body>
+
+</html>
